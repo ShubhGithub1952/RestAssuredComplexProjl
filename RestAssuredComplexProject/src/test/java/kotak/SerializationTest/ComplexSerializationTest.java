@@ -41,8 +41,5 @@ public class ComplexSerializationTest {
 		// Create Object for JSONMapper to Convert java Objects into the JSON Object
 		JsonMapper jsonObj = new JsonMapper();
 		jsonObj.writeValue(new File("./KotakComplexData2.json"), kotakComplexObj);
-		
-		
-		
 	}
 }
