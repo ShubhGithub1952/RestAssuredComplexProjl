@@ -17,5 +17,7 @@ public class ComplexDeSerializationTest {
 		KotakComplexPojo deSerializeObj = jsonObj.readValue(new File(".\\KotakComplexData.json"), KotakComplexPojo.class);
 		 String Symbolobj = deSerializeObj.getBpi().getuSD().getSymbol();
 		System.out.println(Symbolobj);
+		
+		
 	}
 }
