@@ -16,8 +16,8 @@ import kotakPOJOClass.USD;
 public class ComplexSerializationTest {
 	
 	//Provide argument KotakComplexPojo class throuh the KotakComplexPojo Constructor
-	static String disclaimer="This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org";
-	static String chartName="Bitcoin";
+	 String disclaimer="This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org";
+	 String chartName="Bitcoin";
 	@Test
 	public void serializationTest() throws Throwable {
 		//Provide Values of EUR Attributes
@@ -40,6 +40,6 @@ public class ComplexSerializationTest {
 		
 		// Create Object for JSONMapper to Convert java Objects into the JSON Object
 		JsonMapper jsonObj = new JsonMapper();
-		jsonObj.writeValue(new File("./KotakComplexData.json"), kotakComplexObj);
+		jsonObj.writeValue(new File("./KotakComplexData2.json"), kotakComplexObj);
 	}
 }

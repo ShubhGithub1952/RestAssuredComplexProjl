@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-18T17:47:53 IST" name="Default suite" finished-at="2023-01-18T17:47:54 IST" duration-ms="699">
+  <suite started-at="2023-01-19T16:34:14 IST" name="Default suite" finished-at="2023-01-19T16:34:15 IST" duration-ms="865">
     <groups>
     </groups>
-    <test started-at="2023-01-18T17:47:53 IST" name="Default test" finished-at="2023-01-18T17:47:54 IST" duration-ms="699">
-      <class name="kotak.SerializationTest.ComplexSerializationTest">
-        <test-method signature="serializationTest()[pri:0, instance:kotak.SerializationTest.ComplexSerializationTest@5ace1ed4]" started-at="2023-01-18T17:47:53 IST" name="serializationTest" finished-at="2023-01-18T17:47:54 IST" duration-ms="610" status="PASS">
+    <test started-at="2023-01-19T16:34:14 IST" name="Default test" finished-at="2023-01-19T16:34:15 IST" duration-ms="865">
+      <class name="kotak.DeSerializationTest.ComplexDeSerializationTest">
+        <test-method signature="deSerializationTest()[pri:0, instance:kotak.DeSerializationTest.ComplexDeSerializationTest@5ace1ed4]" started-at="2023-01-19T16:34:14 IST" name="deSerializationTest" finished-at="2023-01-19T16:34:15 IST" duration-ms="742" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- serializationTest -->
-      </class> <!-- kotak.SerializationTest.ComplexSerializationTest -->
+        </test-method> <!-- deSerializationTest -->
+      </class> <!-- kotak.DeSerializationTest.ComplexDeSerializationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

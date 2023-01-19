@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="requestChaining.CreateResourseAndPerformChainingTest">
+      <class name="kotak.DeSerializationTest.ComplexDeSerializationTest">
         <methods>
-          <include name="createResourseTest"/>
+          <include name="deSerializationTest"/>
         </methods>
-      </class> <!-- requestChaining.CreateResourseAndPerformChainingTest -->
+      </class> <!-- kotak.DeSerializationTest.ComplexDeSerializationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
