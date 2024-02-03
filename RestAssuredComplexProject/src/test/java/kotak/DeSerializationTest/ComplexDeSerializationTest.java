@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 
 import kotakPOJOClass.KotakComplexPojo;
-import kotakPOJOClass.USD;
 
 public class ComplexDeSerializationTest {
 	@Test

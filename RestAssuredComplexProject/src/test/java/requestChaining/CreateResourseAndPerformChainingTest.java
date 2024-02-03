@@ -13,6 +13,8 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
+import static org.testng.Assert.assertEquals;
+
 import rmgProject.AddProjectPojoClass;
 /**
  * 
@@ -38,6 +40,7 @@ public class CreateResourseAndPerformChainingTest {
 		String actualProjectId = response.jsonPath().get("projectId");
 		response.then().assertThat().time(Matchers.lessThan(3000L));
 		response.then().assertThat().statusCode(201);
+		Assert.assertEquals(201, response.getStatusCode());
 		response.then().contentType(ContentType.JSON);
 		System.out.println(createdByObj);
 		Assert.assertEquals("TYSSShubhamBP", createdByObj);
@@ -64,6 +67,7 @@ public class CreateResourseAndPerformChainingTest {
 				.pathParam("projectID", actualProjectId)
 				.when().get("/projects/{projectID}");
 		getResponse.then().assertThat().statusCode(200);
+		getResponse.getBody().toString();
 		Assert.assertEquals(getResponse.jsonPath().get("createdBy"), "TYSSShubhamBP");
 		getResponse.then().log().all();
 		System.out.println("============================================================ ");
